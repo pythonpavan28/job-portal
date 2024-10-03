@@ -8,6 +8,7 @@ const userApplyRouter = require('./Routes/applicantsRoute');
 // Initialize the app
 const app = express();
 
+
 // Middleware
 app.use(express.json()); // Parses incoming JSON requests
 
