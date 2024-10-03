@@ -1,5 +1,5 @@
-const JobsPost = require("../adminJobPostModel");
-const  AllApplicationModel = require("../applicantsModel");
+const JobsPost = require("../Models/adminJobPostModel");
+const  AllApplicationModel = require("../Models/applicantsModel");
 const nodemailer = require("nodemailer");
 const mongoose = require("mongoose");
 
@@ -7,17 +7,17 @@ const mongoose = require("mongoose");
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "ajaykumarthappeta119@gmail.com",
-    pass: "aadh epxp ylpg rlnb",
+    user: "pythonpavan28@gmail.com",
+    pass: "mpde rglu yllt lswl",
   },
 });
 
 const sendSuccessEmail = (email, title) => {
   const mailOptions = {
-    from: "ajaykumarthappeta119@gmail.com",
+    from: "pythonpavan28@gmail.com",
     to: email,
     subject: "You Have Applied Successfully",
-    text: `You have applied for the job for the ${title} role at Monosage.com.`,
+    text: `You have applied for the job for the ${title} role at pavantech.com.`,
   };
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {

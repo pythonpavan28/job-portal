@@ -1,5 +1,5 @@
-const AllApplicationModel = require("../applicantsModel");
-  const JobsPost = require("../adminJobPostModel");
+const AllApplicationModel = require("../Models/applicantsModel");
+  const JobsPost = require("../Models/adminJobPostModel");
   
   const nodemailer = require("nodemailer");
   const cron = require("node-cron");
@@ -8,8 +8,8 @@ const AllApplicationModel = require("../applicantsModel");
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: "ajaykumarthappeta119@gmail.com",
-      pass: "aadh epxp ylpg rlnb",
+      user: "pythonpavan28@gmail.com",
+      pass: "mpde rglu yllt lswl",
     },
   });
 
